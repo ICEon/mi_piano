@@ -25,17 +25,11 @@ function(e){
 //	audio.play('mario');
   });//click Vibrar
 */
-  	function play(nota) {
-
-document.getElementById(nota).className = 'nota tocada';
-
-}
-
-function touchEnd(event) {
-
-event.target.className = 'nota';
-}
-	
+$('.nota').bind('touchstart', function(){
+    $(this).addClass('tocada');
+}).bind('touchend', function(){
+    $(this).removeClass('tocada');
+});	
 
   });
 });//ready
