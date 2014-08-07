@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Titulo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height" name="viewport" />
+                <link href="css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+        <link href="css/jquery.mobile-1.3.2.min.css" rel="stylesheet">
+   
+        
+       
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        
+		<script src="js/acciones.js"></script>                
+        <script src ="phonegap.js"></script>
+       
+<style>
+#main
+{
+ position: absolute;
+ left:0;
+ top:0;
+ width:100%;	
+}
+#pantalla { 
+		
+				float:left;
+				width:100%; 
+				height:25%; 
+				background: #FFF;
+				text-align:center;
+				font-size:4em;
+				font-weight:bold;
+				font-family:sans-serif;	
+
+
+ 
+			}
+			#teclado {
+
+								float:left;
+				width:100%;
+				height:75%;
+
+			}
+			.nota {							
+				float:left;
+				height:90%;
+				position:relative;
+				
+				outline:#000 solid 1px;
+				width:14.28571428571429%;
+				background: #C9C9C9;
+			}
+			.textonota
+			{
+				position:relative;
+				top:90%;
+				text-align:center;
+				font-size:2em;
+				font-weight:bold;
+				font-family:sans-serif;	
+			}
+		
+				.tocada {
+color: #F00;
+background-color: #c31b5e;
+outline: 1px solid #680b30;
+}
+
+</style>
+        
+        <!-- necesario*/ -->
+    </head>
+    
+    <body>
+        
+<div data-role="page" id="page">
+<div id="main">
+<div id="pantalla">
+Primer Piano
+</div>
+<div id="teclado">
+<div id="do" class="nota" ontouchstart="play('do');" ontouchend="touchEnd(event);">
+<div class="textonota">DO</div>
+ </div>
+  <div id="re" class="nota" ontouchstart="play('re');" ontouchend="touchEnd(event);">
+  <div class="textonota">RE</div> </div>
+  <div id="mi" class="nota" ontouchstart="play('mi');" ontouchend="touchEnd(event);">
+<div class="textonota">MI</div>
+ </div>
+  <div id="fa" class="nota" ontouchstart="play('fa');" ontouchend="touchEnd(event);">
+<div class="textonota">FA</div>
+ </div>
+  <div id="sol" class="nota" ontouchstart="play('sol');" ontouchend="touchEnd(event);">
+<div class="textonota">SOL</div>
+ </div>
+  <div id="la" class="nota" ontouchstart="play('la');" ontouchend="touchEnd(event);">
+<div class="textonota">LA</div>
+ </div>
+  <div id="si" class="nota" ontouchstart="play('si');" ontouchend="touchEnd(event);">
+<div class="textonota">SI</div>
+ </div>
+</div>
+</div>
+
+</div>
+
+    </body>
+
+</html>
